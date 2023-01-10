@@ -1,14 +1,15 @@
 // Revisar que el data atributo sea valido
 export function valida(input) {
 	const tipoInput = input.dataset.tipo;
-	if ( )
+	if (validadores[tipoInput]) {
+		validadores[tipoInput](input);
+	}
 }
 
 // data atributos validos
 const validadores = {
-	nacimiento: (input) => {
-		validarEdad()
-	}
+	nacimiento: (input) => validarEdad(input),
+	
 }
 
 const validarEdad = (evento) => {
