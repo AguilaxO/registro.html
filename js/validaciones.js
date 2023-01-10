@@ -1,4 +1,4 @@
-// Revisar que el data atributo sea valido
+
 export function valida(input) {
 	const tipoInput = input.dataset.tipo;
 	if (validadores[tipoInput]) {
