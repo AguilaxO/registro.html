@@ -4,6 +4,12 @@ export function valida(input) {
 	if (validadores[tipoInput]) {
 		validadores[tipoInput](input);
 	}
+
+	if (input.validity.valid) {
+		input.parentElement.classList.remove("input-container--invalid");
+	} else {
+		input.parentElement.classList.add("input-container--invalid");
+	}
 }
 
 // data atributos validos
