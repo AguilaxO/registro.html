@@ -1,3 +1,16 @@
+// Revisar que el data atributo sea valido
+export function valida(input) {
+	const tipoInput = input.dataset.tipo;
+	if ( )
+}
+
+// data atributos validos
+const validadores = {
+	nacimiento: (input) => {
+		validarEdad()
+	}
+}
+
 const validarEdad = (evento) => {
 	const input = evento.target;
 	const fechaIngresada = new Date(input.value);
